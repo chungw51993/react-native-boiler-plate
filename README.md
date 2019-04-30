@@ -8,3 +8,4 @@
 5. Run 'react-native ios' or 'react-native android' to start developing again
 
 ### Changing App Picture
+[Changing App Picture](https://medium.com/@scottianstewart/react-native-add-app-icons-and-launch-screens-onto-ios-and-android-apps-3bfbc20b7d4c)
