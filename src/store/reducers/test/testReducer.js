@@ -10,9 +10,13 @@ const testReducer = (state = initialState, action) => {
 
   switch(action.type) {
     case TEST_ACTION:
+      let on = 'try me';
+      if (state.on === 'try me') {
+        on = 'working';
+      }
       return {
         ...state,
-        on: 'working',
+        on,
       };
 
     default:
