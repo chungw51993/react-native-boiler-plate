@@ -1,4 +1,6 @@
-## React-Native Boiler Plate
+# React-Native Boiler Plate
+
+## Be sure you have gone thru [Get Started](https://facebook.github.io/react-native/docs/getting-started) and you have correctly set up the environment
 
 ### Changing Display Name
 1. Change the 'displayName' **NOT** 'name' in app.json file
