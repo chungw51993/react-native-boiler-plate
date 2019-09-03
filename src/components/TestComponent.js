@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View, Button } from 'react-native';
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+  Button,
+} from 'react-native';
 
-import TestContainer from './../containers/TestContainer';
+import TestContainer from '../containers/TestContainer';
 
 const welcome = Platform.select({
-  ios: 'Boiler Plate Successfully Created\n' + 'Start Programming!',
-  android: 'Boiler Plate Successfully Created\n' + 'Start Programming!',
+  ios: 'Boiler Plate Successfully Created\nStart Programming!',
+  android: 'Boiler Plate Successfully Created\nStart Programming!',
 });
 
 const styles = StyleSheet.create({
@@ -29,8 +35,9 @@ class TestComponent extends Component {
       <View>
         <Text style={styles.welcome}>{welcome}</Text>
         <Text style={styles.test}>{test.on}</Text>
-        <Button title="Check Redux" onPress={() => testAction()}/>
-      </View>);
+        <Button title="Check Redux" onPress={() => testAction()} />
+      </View>
+    );
   }
 }
 

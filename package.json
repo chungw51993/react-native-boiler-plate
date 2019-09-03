@@ -7,7 +7,9 @@
     "test": "jest",
     "ios": "react-native run-ios",
     "android": "react-native run-android",
-    "devtool": "react-devtools"
+    "devtool": "react-devtools",
+    "eject": "react-native eject",
+    "link": "react-native link"
   },
   "dependencies": {
     "axios": "^0.18.0",
