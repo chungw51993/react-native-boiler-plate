@@ -10,6 +10,7 @@ module.exports = {
     'react/prop-types': 'off',
     'comma-dangle': 'off',
     'react/prefer-stateless-function': 'off',
+    'react/no-array-index-key': 'off',
   },
   'globals': {
     "fetch": false

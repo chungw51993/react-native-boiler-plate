@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import React, {Component} from 'react';
+import {View, Text} from 'react-native';
+import Geolocation from '@react-native-community/geolocation';
 
-class Geolocation extends Component {
+class GeolocationComponent extends Component {
   constructor(props) {
     super(props);
 
@@ -13,24 +14,21 @@ class Geolocation extends Component {
   }
 
   componentDidMount() {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
+    Geolocation.getCurrentPosition(
+      position => {
         this.setState({
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
           error: null,
         });
       },
-      (error) => {
-        console.log(error);
-        this.setState({ error: error.message });
-      },
-      { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
+      error => this.setState({error: error.message}),
+      {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
     );
   }
 
   render() {
-    const { latitude, longitude, error } = this.state;
+    const {latitude, longitude, error} = this.state;
     return (
       <View style={{ alignItems: 'center', justifyContent: 'center' }}>
         <Text>{`Latitude: ${latitude}`}</Text>
@@ -41,4 +39,4 @@ class Geolocation extends Component {
   }
 }
 
-export default Geolocation;
+export default GeolocationComponent;
