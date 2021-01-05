@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@react-native-community/geolocation": "^2.0.2",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "react": "16.8.6",
     "react-devtools": "^3.6.1",
     "react-native": "^0.60.5",
